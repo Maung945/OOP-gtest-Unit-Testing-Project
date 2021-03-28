@@ -35,12 +35,13 @@ void Gelatin::morph(const char* s) {
     if (strcmp(s, "flat") == 0) {
         strcpy(_shape , "flat");
     }
-    else
+    else if (strcmp(s, "sphere") == 0) {
         strcpy(_shape , "sphere");
+    }
 }
 Gelatin Gelatin::split() {
     Gelatin n(_weight/2);
-    // n->morph(_shape);
+    n.morph(_shape);
     this->_weight = _weight/2;
     return n;
 }
