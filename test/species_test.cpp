@@ -134,4 +134,4 @@ TEST(species, moclan) {
   // Hatch
   moclanEgg.hatch();
   EXPECT_FALSE(moclanEgg.isEgg());
-}
+ }
