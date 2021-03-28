@@ -13,6 +13,7 @@ class Kaylon: public Humanoid {
     double _height;
     double _weight;
     bool _firing;
+    
  public:
     Kaylon();
     Kaylon(double h, double w);
